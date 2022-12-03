@@ -1,0 +1,84 @@
+/* AJUSTES GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* BARRA DE NAVEGACION */
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+}
+
+header div h1 {
+    margin-left: 1em;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    margin-right: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+a:hover {
+    background: rgb(0, 184, 245);
+}
+
+/* MENU DESPLEGABLE */
+.desplegable {
+    position: relative;
+}
+
+.desplegable ul {
+    position: absolute;
+    left: 15px;
+    top: 70px;
+
+    display: none;
+}
+.desplegable ul li a {
+    background: rgb(0, 184, 245);
+    color: white;
+    font-size: 0.8em;
+    margin: 1px;
+  }
+.desplegable ul li a:hover {
+    background: #666;
+  }
+
+.desplegable:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
